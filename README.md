@@ -6,6 +6,7 @@ a) Medidas de tendência central e dispersão: Média, Moda, Mediana, Variância
 b) Este conjunto de dados deve ser introduzido pelo usuário. O contexto dos dados deve ser tratado (ligado ao projeto integrador). 
 c) Usuário deve possuir as funcionalidades de Alterar, Incluir, Excluir e produzir relatórios em tela e em TXT.
 d) Os dados devem ser salvos e espelhados numa base .TXT
+
 Parte 02: 
 a) Cálculos para modelo de probabilidade Binomial (tabela de distribuição de frequências).
 b) Cálculos para modelo e probabilidade Normal (calculo específico e para 1 Desvio Padrão) 
