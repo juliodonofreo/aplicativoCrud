@@ -1,2 +1,3 @@
-1,   julio, 19,   hans,   2003-06-16, 3
-2, gisele, 38, jair, 2003-06-16, 4
+1,julio,19,hans,2003-06-16,3
+2,Vagner,25,Manuel,2003-06-19,3
+3,Vitor,24,Lucas,2014-09-18,1

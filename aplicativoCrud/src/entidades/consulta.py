@@ -74,9 +74,9 @@ class Consulta:
     def gravidade(self, gravidade):
         self.__gravidade = gravidade
 
-    @classmethod
-    def reset_id(cls):
-        cls.__id = 1
+    @staticmethod
+    def reset_id():
+        Consulta.__id = 1
 
     def __repr__(self) -> str:
         return f"{self.__id}, {self.nome_paciente}, {self.idade_paciente}, {self.nome_medico}, {self.data_consulta}, {self.gravidade}"

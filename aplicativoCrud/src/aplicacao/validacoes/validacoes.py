@@ -1,5 +1,7 @@
 from datetime import datetime
 
+from entidades.enums import gravidade
+
 
 def validar_inteiro(msg=""):
     while True:
@@ -20,3 +22,25 @@ def validar_data(fmt, msg=""):
         else:
             return valor
 
+
+def validar_nome(msg=""):
+    while True:
+        nome: str = str(input(msg)).capitalize()
+        if nome == '':
+            print('o nome não pode ficar vazio.', end='')
+        elif not nome.replace(' ', '').isalpha():
+            print('o nome deve conter apenas letras. ', end='')
+        elif len(nome) < 2:
+            print('o nome precisa ter ao menos duas letras. ', end='')
+        else:
+            return nome
+
+
+def validar_gravidade(msg=""):
+    while True:
+        try:
+            tipo_gravidade = gravidade.Gravidade[input(msg).upper().replace("Ê", "E")]
+        except KeyError:
+            print("Digite uma gravidade válida. ", end="")
+        else:
+            return tipo_gravidade
