@@ -12,14 +12,10 @@ def menu_inicial():
     print("[6] medidas de tendencia central das idades dos pacientes")
     print()
 
-    try:
-        valor = validacoes.validar_inteiro()
-    except TypeError as e:
-        print(e)
+    valor = validacoes.validar_inteiro()
+
+    if valor < 0 or valor > 6:
+        print("O valor deve ser maior ou igual a 0 e menor que 7, digite novamente. ")
         menu_inicial()
     else:
-        if valor < 0 or valor > 6:
-            print("O valor deve ser maior ou igual a 0 e menor que 7, digite novamente. ")
-            menu_inicial()
-        else:
-            return valor
+        return valor

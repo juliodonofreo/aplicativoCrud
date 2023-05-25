@@ -20,7 +20,7 @@ if __name__ == "__main__":
             limpar_tela()
 
             nome_paciente = validacoes.validar_nome("digite o nome do paciente: ")
-            idade_paciente = validacoes.validar_inteiro("digite a idade do paciente: ")
+            idade_paciente = validacoes.validar_idade("digite a idade do paciente: ")
             nome_medico = validacoes.validar_nome("digite o nome do medico: ")
             data_consulta = validacoes.validar_data("%d/%m/%Y", "Digite a data da consulta (dd/mm/yyyy): ")
             gravidade = validacoes.validar_gravidade("digite o nivel de Gravidade["

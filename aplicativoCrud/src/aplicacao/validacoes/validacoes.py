@@ -8,9 +8,21 @@ def validar_inteiro(msg=""):
         try:
             valor = int(input(msg))
         except ValueError:
-            print("valor inválido. por favor digite novamente. ", end="")
+            print("valor inválido, por favor digite novamente. ", end="")
         else:
             return valor
+
+
+def validar_idade(msg=""):
+    while True:
+        idade = validar_inteiro(msg)
+
+        if idade < 0:
+            print("A idade não pode ser um valor negativo. ", end="")
+        elif idade > 200:
+            print("Digite uma data válida. ", end="")
+        else:
+            return idade
 
 
 def validar_data(fmt, msg=""):

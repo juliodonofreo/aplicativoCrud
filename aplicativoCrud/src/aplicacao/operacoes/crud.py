@@ -49,7 +49,7 @@ def atualizar_consulta(id):
     if id_na_lista(lista, id):
         consulta = lista[id - 1]
         consulta.nome_paciente = validacoes.validar_nome("Novo nome do paciente: ")
-        consulta.idade_paciente = validacoes.validar_inteiro("Nova idade do paciente: ")
+        consulta.idade_paciente = validacoes.validar_idade("Nova idade do paciente: ")
         consulta.nome_medico = validacoes.validar_nome("Novo nome do médico: ")
         consulta.data_consulta = validacoes.validar_data("%d/%m/%Y", "Nova data da consulta (dd/mm/yyyy): ")
         consulta.gravidade = validacoes.validar_gravidade("Novo nivel de Gravidade["
